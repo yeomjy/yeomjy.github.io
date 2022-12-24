@@ -5,7 +5,7 @@
       My name is Junyoung Yeom. I am an undergraduate student majoring in
       Computer Science and Engineering, at Seoul National University. I am also
       double majoring in mathematics. I am interested in theory of deep
-      learning, optimization, and reinforcement learning.
+      learning, optimization, graph neural network, and reinforcement learning.
     </div>
   </div>
 </template>

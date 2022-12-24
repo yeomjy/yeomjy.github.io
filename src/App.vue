@@ -1,7 +1,5 @@
 <script setup lang="ts">
-// import { RouterLink, RouterView } from "vue-router"
 import AboutView from "./views/AboutView.vue"
-// import SkillView from "./views/SkillView.vue"
 </script>
 
 <template>
@@ -24,9 +22,6 @@ import AboutView from "./views/AboutView.vue"
     </div> -->
   </header>
   <AboutView />
-  <!-- <SkillView /> -->
-
-  <!-- <RouterView /> -->
 </template>
 
 <style scoped>
