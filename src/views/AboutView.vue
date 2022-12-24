@@ -1,17 +1,10 @@
 <script setup lang="ts">
-import Skills from "../components/MySkills.vue"
+import Skills from "@/components/MySkills.vue"
 import TA from "@/components/TAExperience.vue"
+import About from "@/components/MyInfo.vue"
 </script>
 <template>
-  <div class="about">
-    <h1>About me</h1>
-    <div>
-      My name is Junyoung Yeom. I am an undergraduate student majoring in
-      Computer Science and Engineering, at Seoul National University. I am also
-      double majoring in mathematics. I am interested in theory of deep
-      learning, optimization, and reinforcement learning.
-    </div>
-  </div>
+  <About />
   <Skills />
   <TA />
 </template>
