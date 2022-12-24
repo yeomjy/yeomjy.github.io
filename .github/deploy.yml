@@ -26,7 +26,6 @@ permissions:
 
 jobs:
   build:
-    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
 
     steps:
@@ -45,7 +44,7 @@ jobs:
 
       - name: Install Dependency
         id: install
-        run: yarn install --prod
+        run: yarn install
 
       - name: Build
         id: build
@@ -54,7 +53,7 @@ jobs:
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: dist
+          path: "dist"
 
   deploy:
     name: Deploy
