@@ -2,23 +2,12 @@
   <div class="skills">
     <h1>Skills</h1>
     <div>
-      <ul>
-        <li>Pytorch</li>
-        <li>Tensorflow</li>
-      </ul>
+      <v-list>
+        <v-list-item> PyTorch </v-list-item>
+        <v-list-item> Tensorflow </v-list-item>
+      </v-list>
     </div>
   </div>
 </template>
 
-<style>
-/*@media (min-width: 1024px) {*/
-/*  .skills {*/
-/*    min-height: 100vh;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*  }*/
-/*}*/
-.skills {
-  align-items: center;
-}
-</style>
+<style></style>
