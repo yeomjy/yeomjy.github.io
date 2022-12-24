@@ -1,0 +1,70 @@
+name: "Build and deploy"
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths-ignore:
+      - .gitignore
+      - README.md
+      - LICENSE
+
+  workflow_dispatch:
+    inputs:
+    logLevel:
+      description: "Log level"
+      required: true
+      default: "warning"
+    tags:
+      description: "Manually Deploy"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v1
+
+      - name: Setup Node
+        id: node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install Dependency
+        id: install
+        run: yarn install --prod
+
+      - name: Build
+        id: build
+        run: yarn build
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: dist
+
+  deploy:
+    name: Deploy
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v1
