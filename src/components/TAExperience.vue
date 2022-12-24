@@ -21,5 +21,4 @@
 .educations {
   align-items: center;
 }
-
 </style>

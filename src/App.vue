@@ -12,9 +12,7 @@ import AboutView from "./views/AboutView.vue"
       height="125"
     />
     <h1>Junyoung Yeom</h1>
-    <a href="https://github.com/yeomjy">
-      GitHub
-    </a>
+    <a href="https://github.com/yeomjy"> GitHub </a>
 
     <!-- <div class="wrapper">
 
