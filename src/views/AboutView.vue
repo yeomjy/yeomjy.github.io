@@ -4,31 +4,19 @@ import TA from "@/components/TAExperience.vue"
 import About from "@/components/MyInfo.vue"
 </script>
 <template>
-  <div class="container">
-    <div class="element">
-      <About />
-    </div>
-    <div class="element">
-      <Skills />
-    </div>
-    <div class="element">
-      <TA />
-    </div>
+  <div>
+    <v-container>
+      <v-row>
+        <About />
+      </v-row>
+      <v-row>
+        <Skills />
+      </v-row>
+      <v-row>
+        <TA />
+      </v-row>
+    </v-container>
   </div>
 </template>
 
-<style>
-.element {
-  border: 5px solid;
-  padding: 20px;
-  margin: 20px;
-  display: block;
-  width: 800px;
-  height: auto;
-  align-content: center;
-}
-.container {
-  display: grid;
-  grid-template-columns: 1024px;
-}
-</style>
+<style></style>
