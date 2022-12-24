@@ -1,4 +1,3 @@
-<script></script>
 <template>
   <div>
     <h2>TA</h2>
