@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div>
     <h2>About me</h2>
     <div>
       My name is Junyoung Yeom. I am an undergraduate student majoring in
@@ -11,14 +11,4 @@
 </template>
 
 <style>
-/*@media (min-width: 1024px) {*/
-/*  .about {*/
-/*    height: 30vh;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*  }*/
-/*}*/
-.about {
-  align-items: center;
-}
 </style>

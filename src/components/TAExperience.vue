@@ -1,26 +1,6 @@
-<script>
-const courses = [
-  {
-    title: "Programming Languages",
-    courseNo: "4190.310",
-    year: 2022,
-    semester: "Spring",
-  },
-  {
-    title: "Discrete Mathematics",
-    courseNo: "4190.101",
-    year: 2021,
-    semester: "Fall",
-  },
-]
-export default {
-  data: () => {
-    courses
-  },
-}
-</script>
+<script></script>
 <template>
-  <div class="educations">
+  <div>
     <h2>TA</h2>
     <div>
       <v-list density="compact">
@@ -36,9 +16,4 @@ export default {
     </div>
   </div>
 </template>
-
-<style>
-.educations {
-  align-items: center;
-}
-</style>
+<style></style>

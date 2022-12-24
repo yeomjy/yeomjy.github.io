@@ -1,5 +1,5 @@
 <template>
-  <div class="skills">
+  <div>
     <h2>Skills</h2>
     <div>
       <v-list density="compact">
