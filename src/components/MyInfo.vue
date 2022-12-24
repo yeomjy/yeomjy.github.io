@@ -11,11 +11,14 @@
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .about {
-    height: 30vh;
-    display: flex;
-    align-items: center;
-  }
+/*@media (min-width: 1024px) {*/
+/*  .about {*/
+/*    height: 30vh;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*  }*/
+/*}*/
+.about {
+  align-items: center;
 }
 </style>

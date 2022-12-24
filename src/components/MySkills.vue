@@ -11,11 +11,14 @@
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .skills {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+/*@media (min-width: 1024px) {*/
+/*  .skills {*/
+/*    min-height: 100vh;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*  }*/
+/*}*/
+.skills {
+  align-items: center;
 }
 </style>

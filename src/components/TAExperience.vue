@@ -11,11 +11,15 @@
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .educations {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+/*@media (min-width: 1024px) {*/
+/*  .educations {*/
+/*    min-height: 100vh;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*  }*/
+/*}*/
+.educations {
+  align-items: center;
 }
+
 </style>

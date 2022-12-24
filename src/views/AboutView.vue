@@ -23,10 +23,12 @@ import About from "@/components/MyInfo.vue"
   padding:20px;
   margin:20px;
   display:block;
-  width:80vw;
+  width:800px;
+  height: auto;
+  align-content: center;
 }
 .container {
   display: grid;
-  grid-template-columns: 100vw;
+  grid-template-columns: 1024px;
 }
 </style>
