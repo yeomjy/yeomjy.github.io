@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>About me</h1>
+    <h2>About me</h2>
     <div>
       My name is Junyoung Yeom. I am an undergraduate student majoring in
       Computer Science and Engineering, at Seoul National University. I am also
