@@ -7,15 +7,16 @@ import AboutView from "./views/AboutView.vue"
     <v-main>
       <v-content>
         <v-container>
-          <v-row>
+          <v-row dense>
             <v-col>
-              <img
-                alt="Profile Image"
-                class="profile"
-                src="@/assets/logo.svg"
-                width="125"
-                height="125"
-              />
+              <v-avatar size="125" class="profile">
+                <img
+                  alt="Profile Image"
+                  src="@/assets/profile.jpeg"
+                  width="125"
+                  height="125"
+                />
+              </v-avatar>
             </v-col>
           </v-row>
           <v-row>
