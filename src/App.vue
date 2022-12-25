@@ -3,35 +3,45 @@ import AboutView from "./views/AboutView.vue"
 </script>
 
 <template>
-  <v-container>
-    <v-row>
-      <header>
-        <img
-          alt="Profile Image"
-          class="profile"
-          src="@/assets/logo.svg"
-          width="125"
-          height="125"
-        />
-      </header>
-    </v-row>
-    <v-row>
-      <h1>Junyoung Yeom</h1>
-    </v-row>
-    <v-row>
-      <div class="wrapper">
-        <nav>
-          <a href="https://github.com/yeomjy">GitHub</a>
-          <a href="mailto:yeomjy111@gmail.com">Email</a>
-          <a href="https://yeomjy.com/blog">Blog</a>
-        </nav>
-      </div>
-    </v-row>
+  <v-app>
+    <v-main>
+      <v-container>
+        <v-row>
+          <v-col>
+            <header>
+              <img
+                alt="Profile Image"
+                class="profile"
+                src="@/assets/logo.svg"
+                width="125"
+                height="125"
+              />
+            </header>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col>
+            <h1 class="name">Junyoung Yeom</h1>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col>
+            <div class="wrapper">
+              <nav>
+                <a href="https://github.com/yeomjy">GitHub</a>
+                <a href="mailto:yeomjy111@gmail.com">Email</a>
+                <a href="https://yeomjy.com/blog">Blog</a>
+              </nav>
+            </div>
+          </v-col>
+        </v-row>
 
-    <v-row>
-      <AboutView />
-    </v-row>
-  </v-container>
+        <v-row>
+          <AboutView />
+        </v-row>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <style scoped>
