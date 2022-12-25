@@ -5,10 +5,10 @@ import AboutView from "./views/AboutView.vue"
 <template>
   <v-app>
     <v-main>
-      <v-container>
-        <v-row>
-          <v-col>
-            <header>
+      <v-content>
+        <v-container>
+          <v-row>
+            <v-col>
               <img
                 alt="Profile Image"
                 class="profile"
@@ -16,40 +16,39 @@ import AboutView from "./views/AboutView.vue"
                 width="125"
                 height="125"
               />
-            </header>
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-col>
-            <h1 class="name">Junyoung Yeom</h1>
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-col>
-            <div class="wrapper">
-              <nav>
-                <a href="https://github.com/yeomjy">GitHub</a>
-                <a href="mailto:yeomjy111@gmail.com">Email</a>
-                <a href="https://yeomjy.com/blog">Blog</a>
-              </nav>
-            </div>
-          </v-col>
-        </v-row>
-
-        <v-row>
-          <AboutView />
-        </v-row>
-      </v-container>
+            </v-col>
+          </v-row>
+          <v-row>
+            <v-col>
+              <h1 class="name">Junyoung Yeom</h1>
+            </v-col>
+          </v-row>
+          <v-row>
+            <v-col>
+              <div class="wrapper">
+                <nav>
+                  <a href="https://github.com/yeomjy">GitHub</a>
+                  <a href="mailto:yeomjy111@gmail.com">Email</a>
+                  <a href="https://yeomjy.com/blog">Blog</a>
+                </nav>
+              </div>
+            </v-col>
+          </v-row>
+          <v-row>
+            <AboutView />
+          </v-row>
+        </v-container>
+      </v-content>
     </v-main>
+    <v-footer padless>
+      This page is built with &nbsp;
+      <a href="https://vuejs.org/">Vue.js</a> &nbsp; and &nbsp;
+      <a href="https://next.vuetifyjs.com/en/">Vuetify</a>
+    </v-footer>
   </v-app>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
 .name {
   text-align: center;
 }
