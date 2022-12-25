@@ -23,6 +23,7 @@ import AboutView from "./views/AboutView.vue"
         <nav>
           <a href="https://github.com/yeomjy">GitHub</a>
           <a href="mailto:yeomjy111@gmail.com">Email</a>
+          <a href="https://yeomjy.com/blog">Blog</a>
         </nav>
       </div>
     </v-row>
