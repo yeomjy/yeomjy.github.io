@@ -8,8 +8,8 @@
       neural network, optimization, graph neural network, and reinforcement
       learning.<br />
       I am also interested in distributed computing, parallel computing, backend
-      programming and environments. I write some posts at
-      <a href="https://yeomjy.com/blog">my blog</a> about my interests.<br />
+      programming and environments. I write some posts at my
+      <a href="https://yeomjy.com/blog">blog</a> about my interests.<br />
       I am a member of <a href="https://club-gauss.github.io">Club Gauss</a>, an
       undergraduate student club in SNU.
     </div>
