@@ -1,33 +1,44 @@
+<script lang="ts" setup>
+type ProgrammingSkillType = {
+  name: string
+  score: number
+  detail: string
+}
+const data: ProgrammingSkillType[] = [
+  {
+    name: "PyTorch",
+    score: 4,
+    detail:
+      "Implemented various models in research papers, and implemented my own model for mini research project.",
+  },
+  {
+    name: "TensorFlow",
+    score: 3,
+    detail: "",
+  },
+  {
+    name: "Django",
+    score: 4,
+    detail:
+      "Developed and deployed fully working backend api service twice, with async task queue, scheduled jobs, and machine learning feature.",
+  },
+  {
+    name: "Google Cloud Platform",
+    score: 4,
+    detail:
+      "Deployment on Compute Engine and Cloud Run, and integration with Cloud SQL and Cloud Storage & Cloud CDN service.",
+  },
+]
+</script>
 <template>
   <div>
     <h2>Programming Skills</h2>
-    <div>
-      <v-list density="compact">
-        <v-list-item>
-          <v-list-item-title>PyTorch</v-list-item-title>
-          4/5 <br />
-          Implemented various models in research papers, and implemented my own
-          model for mini research project.
-        </v-list-item>
-        <v-list-item>
-          <v-list-item-title>Tensorflow</v-list-item-title>
-          3/5
-        </v-list-item>
-        <v-list-item>
-          <v-list-item-title>Django</v-list-item-title>
-          4/5 <br />
-          Developed and deployed fully working backend api service twice, with
-          async task queue, scheduled jobs, and machine learning feature.
-        </v-list-item>
-        <v-list-item>
-          <v-list-item-title>Google Cloud Platform</v-list-item-title>
-          4/5 <br />
-          Deployment on Compute Engine and Cloud Run, and integration with Cloud
-          SQL and Cloud Storage & Cloud CDN service.
-        </v-list-item>
-      </v-list>
-    </div>
+    <v-list>
+      <v-list-item v-for="(item, i) in data" :key="i">
+        <v-list-item-title>{{ item.name }}</v-list-item-title>
+        {{ item.score }}/5<br />
+        {{ item.detail }}
+      </v-list-item>
+    </v-list>
   </div>
 </template>
-
-<style></style>
