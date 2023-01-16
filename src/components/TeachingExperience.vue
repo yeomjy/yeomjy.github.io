@@ -24,17 +24,11 @@ const data: TeachingExperience[] = [
 ]
 </script>
 <template>
-  <div>
-    <h2>Teaching Experience</h2>
-    <div>
-      <v-list>
-        <v-list-item v-for="(item, i) in data" :key="i">
-          <v-list-item-title>
-            {{ item.id }} {{ item.title }}
-          </v-list-item-title>
-          {{ `${item.role}, ${item.year} ${item.semester}` }}
-        </v-list-item>
-      </v-list>
-    </div>
-  </div>
+  <h2>Teaching Experience</h2>
+  <v-list>
+    <v-list-item v-for="(item, i) in data" :key="i">
+      <v-list-item-title> {{ item.id }} {{ item.title }} </v-list-item-title>
+      {{ `${item.role}, ${item.year} ${item.semester}` }}
+    </v-list-item>
+  </v-list>
 </template>

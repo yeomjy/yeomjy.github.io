@@ -31,14 +31,12 @@ const data: ProgrammingSkillType[] = [
 ]
 </script>
 <template>
-  <div>
-    <h2>Programming Skills</h2>
-    <v-list>
-      <v-list-item v-for="(item, i) in data" :key="i">
-        <v-list-item-title>{{ item.name }}</v-list-item-title>
-        {{ item.score }}/5<br />
-        {{ item.detail }}
-      </v-list-item>
-    </v-list>
-  </div>
+  <h2>Programming Skills</h2>
+  <v-list>
+    <v-list-item v-for="(item, i) in data" :key="i">
+      <v-list-item-title>{{ item.name }}</v-list-item-title>
+      {{ item.score }}/5<br />
+      {{ item.detail }}
+    </v-list-item>
+  </v-list>
 </template>
