@@ -5,12 +5,9 @@ import MainView from "./views/MainView.vue"
 <template>
   <v-app>
     <v-main>
-      <MainView />
+      <v-card elevation="10">
+        <MainView />
+      </v-card>
     </v-main>
-    <v-footer>
-      This page is built with &nbsp;
-      <a href="https://vuejs.org/">Vue.js</a> &nbsp; and &nbsp;
-      <a href="https://next.vuetifyjs.com/en/">Vuetify</a>
-    </v-footer>
   </v-app>
 </template>
