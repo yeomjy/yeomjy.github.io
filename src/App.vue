@@ -5,9 +5,7 @@ import MainView from "./views/MainView.vue"
 <template>
   <v-app>
     <v-main>
-      <v-card elevation="10">
-        <MainView />
-      </v-card>
+      <MainView/>
     </v-main>
   </v-app>
 </template>
