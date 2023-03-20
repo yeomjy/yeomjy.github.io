@@ -3,13 +3,9 @@
   <p>
     My name is Junyoung Yeom. I am an undergraduate student majoring in Computer
     Science and Engineering, at Seoul National University. I am also double
-    majoring in mathematics. I am interested in generalization of deep neural
-    network, optimization, geometric deep learning, graph neural network, and
-    reinforcement learning.<br />
-    I am also interested in distributed computing, parallel computing, backend
-    programming and environments. I write some posts at my
-    <a href="https://yeomjy.com/blog">blog</a> about my interests.<br />
-    I am a member of <a href="https://club-gauss.github.io">Club Gauss</a>, an
-    undergraduate student club in SNU.
+    majoring in mathematics. I am interested in Reinforcement Learning,
+    Machine Learning for Combinatorial Optimization(via RL), and Geometric Deep Learning.<br>
+    Currently, I am working as an undergraduate research intern at
+    <a href="https://mllab.snu.ac.kr">Machine Learning Lab</a>, Seoul National University.
   </p>
 </template>
