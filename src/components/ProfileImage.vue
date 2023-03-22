@@ -2,7 +2,7 @@
   <v-avatar size="125" class="profile">
     <img
       alt="Profile Image"
-      src="@/assets/profile.jpeg"
+      src="@/assets/profile.jpg"
       width="125"
       height="125"
     />
