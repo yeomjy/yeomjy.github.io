@@ -29,11 +29,11 @@ import Social from "@/contents/SocialInfo.vue"
         </v-col>
       </v-row>
 
-      <v-row>
-        <v-col>
-          <About />
-        </v-col>
-      </v-row>
+<!--      <v-row>-->
+<!--        <v-col>-->
+<!--          <About />-->
+<!--        </v-col>-->
+<!--      </v-row>-->
       <v-row>
         <v-col>
           <Education />

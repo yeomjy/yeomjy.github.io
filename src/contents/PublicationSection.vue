@@ -89,8 +89,8 @@ const data: PublicationType[] = [
     paperurl: "https://arxiv.org/abs/2312.03414",
     codeurl: "https://arxiv.org/abs/2312.03414",
     projecturl: "https://janghyun1230.github.io/memory",
-    bibtex: "@/assets/pub/bib/23ccm.bib",
-    imgpath: "@/assets/pub/img/23ccm.png",
+    bibtex: "../assets/pub/bib/23ccm.bib",
+    imgpath: "../assets/pub/img/23ccm.png",
   },
   {
     title: "Discovering Hierarchical Achievements in Reinforcement Learning via Contrastive Learning",
@@ -113,8 +113,8 @@ const data: PublicationType[] = [
     paperurl: "https://arxiv.org/abs/2307.03486",
     codeurl: "https://github.com/snu-mllab/Achievement-Distillation",
     projecturl: null,
-    bibtex: "@/assets/pub/bib/23ad.bib",
-    imgpath: "@/assets/pub/img/23ad.gif",
+    bibtex: "../assets/pub/bib/23ad.bib",
+    imgpath: "../assets/pub/img/23ad.gif",
   },
 ]
 const testimg = "https://symoon11.github.io/images/moon23neurips.gif"
@@ -150,7 +150,7 @@ const testimg = "https://symoon11.github.io/images/moon23neurips.gif"
                 <a :href="item.bibtex">BibTeX</a>
               </nav>
             </v-card-subtitle>
-            <v-card-text>
+            <v-card-text class="paper-detail">
               {{ item.detail }}
             </v-card-text>
           </v-card>
@@ -198,6 +198,10 @@ nav a:first-of-type {
 
 .paper-info {
   opacity: 1;
+}
+
+.paper-detail {
+  margin-top: 0.3em;
 }
 </style>
 

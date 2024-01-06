@@ -6,12 +6,12 @@ import Content from "@/components/ContentSection.vue"
   <v-container id="main-view" fluid>
     <v-row>
       <v-spacer />
-      <v-col cols="11" xl="8">
+      <v-col cols="11" xl="6">
         <v-row>
-          <v-col cols="12" sm="12" md="4" xl="3" class="profile-section">
+          <v-col cols="12" sm="12" md="4" xl="4" class="profile-section">
             <Profile />
           </v-col>
-          <v-col cols="12" sm="12" md="8" xl="9" class="content-section">
+          <v-col cols="12" sm="12" md="8" xl="8" class="content-section">
             <Content />
           </v-col>
         </v-row>

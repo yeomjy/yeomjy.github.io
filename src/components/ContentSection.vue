@@ -2,6 +2,7 @@
 import Skills from "@/contents/ProgrammingSkills.vue"
 import TA from "@/contents/TeachingExperience.vue"
 import Publications from "@/contents/PublicationSection.vue"
+import AboutMe from "@/contents/AboutMe.vue"
 </script>
 
 <template>
@@ -17,6 +18,11 @@ import Publications from "@/contents/PublicationSection.vue"
 <!--  </v-row>-->
   <v-card class="main-section">
     <v-container fluid>
+      <v-row>
+        <v-col>
+          <AboutMe />
+        </v-col>
+      </v-row>
       <v-row>
         <v-col>
           <Publications />
