@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import snulogo from "@/assets/snulogo.png"
 type EducationDataType = {
   name: string
   start: string
@@ -15,7 +15,7 @@ const data: EducationDataType[] = [
     start: "2024.03",
     end: "Current",
     degree: "M.S. & Ph.D. in Computer Science and Engineering",
-    logo: "src/assets/snulogo.png",
+    logo: snulogo,
     advisor: "Hyun Oh Song",
     advisor_url: "https://mllab.snu.ac.kr/hyunoh"
   },
@@ -24,7 +24,7 @@ const data: EducationDataType[] = [
     start: "2019.03",
     end: "2024.02",
     degree: "B.S. in Computer Science and Engineering & B.S. in Mathematical Sciences",
-    logo: "src/assets/snulogo.png",
+    logo: snulogo,
     advisor: null,
     advisor_url: null,
   }
@@ -42,12 +42,12 @@ const data: EducationDataType[] = [
         :key="i"
         no-gutters
       >
-        <v-col cols="1" class="progress">
+        <v-col cols="1" class="logo">
           <v-img :src="item.logo" />
         </v-col>
         <v-col cols="10">
           <v-card flat>
-            <v-card-title class="text-wrap" >
+            <v-card-title class="text-wrap">
               {{ item.name }}
             </v-card-title>
             <v-card-subtitle>
@@ -82,6 +82,10 @@ const data: EducationDataType[] = [
 
 .edu-list-container {
   padding-left: 0;
+}
+
+.logo {
+  margin-top: 1em;
 }
 
 

@@ -1,4 +1,9 @@
 <script lang="ts" setup>
+import ad23_img from "@/assets/pub/img/ad23.gif"
+import ccm23_img from "@/assets/pub/img/ccm23.png"
+import ad23_bib from "@/assets/pub/bib/ad23.txt"
+import ccm23_bib from "@/assets/pub/bib/ccm23.txt"
+
 type AuthorType = {
   firstname: string
   lastname: string
@@ -38,6 +43,7 @@ function author_name(a: AuthorType) {
   else
     return name
 }
+
 
 // Author info in MLLAB
 
@@ -89,8 +95,8 @@ const data: PublicationType[] = [
     paperurl: "https://arxiv.org/abs/2312.03414",
     codeurl: "https://arxiv.org/abs/2312.03414",
     projecturl: "https://janghyun1230.github.io/memory",
-    bibtex: "../assets/pub/bib/23ccm.bib",
-    imgpath: "../assets/pub/img/23ccm.png",
+    bibtex: ccm23_bib,
+    imgpath: ccm23_img,
   },
   {
     title: "Discovering Hierarchical Achievements in Reinforcement Learning via Contrastive Learning",
@@ -113,8 +119,8 @@ const data: PublicationType[] = [
     paperurl: "https://arxiv.org/abs/2307.03486",
     codeurl: "https://github.com/snu-mllab/Achievement-Distillation",
     projecturl: null,
-    bibtex: "../assets/pub/bib/23ad.bib",
-    imgpath: "../assets/pub/img/23ad.gif",
+    bibtex: ad23_bib,
+    imgpath: ad23_img,
   },
 ]
 const testimg = "https://symoon11.github.io/images/moon23neurips.gif"
