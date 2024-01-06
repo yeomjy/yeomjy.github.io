@@ -144,10 +144,10 @@ const testimg = "https://symoon11.github.io/images/moon23neurips.gif"
             </v-card-title>
             <v-card-subtitle class="paper-info">
               <div v-html="author_name_tag(item.authors)" class="text-wrap"></div>
-              <div class="paper-source">
+              <div class="paper-source text-wrap">
                 {{ item.source }}, {{ item.year }}
               </div>
-              <nav>
+              <nav class="text-wrap">
                 <a :href="item.paperurl">Paper</a>
                 <a :href="item.codeurl">Code</a>
                 <a v-if="item.projecturl !== null" :href="item.projecturl">Project Page</a>
