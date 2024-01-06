@@ -10,21 +10,24 @@ const data: ProgrammingSkillType[] = [
     name: "PyTorch",
     score: 85,
     detail:
-      "Implemented various models in research papers, and implemented my own model for mini research project.",
+      "Contributed to deep learning research on reinforcement learning and NLP. " +
+      "Reproduced several well-known RL algorithms such as PPO, SAC, TD3. " +
+      "Implemented UNet for CT image data segmentation.",
     color: "green",
   },
   {
     name: "Django",
     score: 80,
     detail:
-      "Developed and deployed fully working backend api service twice, with async task queue, scheduled jobs, and machine learning feature.",
+      "Developed and deployed fully working backend api service for " +
+      "team project twice, with async task queue, scheduled jobs, and machine learning feature.",
     color: "green",
   },
   {
     name: "Google Cloud Platform",
     score: 75,
     detail:
-      "Deployment on Compute Engine and Cloud Run, and integration with Cloud SQL and Cloud Storage & Cloud CDN service.",
+      "Has experience on deployment on Compute Engine and Cloud Run, and integration with Cloud SQL and Cloud Storage & Cloud CDN service.",
     color: "green",
   },
 ]

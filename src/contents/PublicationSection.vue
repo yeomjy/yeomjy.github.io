@@ -93,7 +93,7 @@ const data: PublicationType[] = [
     paperurl: "https://arxiv.org/abs/2312.03414",
     codeurl: "https://arxiv.org/abs/2312.03414",
     projecturl: "https://janghyun1230.github.io/memory",
-    bibtex: "public/bib/ccm23.bib",
+    bibtex: "bib/ccm23.bib",
     imgpath: ccm23_img,
   },
   {
@@ -117,7 +117,7 @@ const data: PublicationType[] = [
     paperurl: "https://arxiv.org/abs/2307.03486",
     codeurl: "https://github.com/snu-mllab/Achievement-Distillation",
     projecturl: null,
-    bibtex: "public/bib/ad23.bib",
+    bibtex: "bib/ad23.bib",
     imgpath: ad23_img,
   },
 ]
