@@ -89,8 +89,8 @@ const data: PublicationType[] = [
     paperurl: "https://arxiv.org/abs/2312.03414",
     codeurl: "https://arxiv.org/abs/2312.03414",
     projecturl: "https://janghyun1230.github.io/memory",
-    bibtex: "src/assets/pub/bib/23ccm.bib",
-    imgpath: "src/assets/pub/img/23ccm.png",
+    bibtex: "@/assets/pub/bib/23ccm.bib",
+    imgpath: "@/assets/pub/img/23ccm.png",
   },
   {
     title: "Discovering Hierarchical Achievements in Reinforcement Learning via Contrastive Learning",
@@ -113,8 +113,8 @@ const data: PublicationType[] = [
     paperurl: "https://arxiv.org/abs/2307.03486",
     codeurl: "https://github.com/snu-mllab/Achievement-Distillation",
     projecturl: null,
-    bibtex: "src/assets/pub/bib/23ad.bib",
-    imgpath: "src/assets/pub/img/23ad.gif",
+    bibtex: "@/assets/pub/bib/23ad.bib",
+    imgpath: "@/assets/pub/img/23ad.gif",
   },
 ]
 const testimg = "https://symoon11.github.io/images/moon23neurips.gif"
