@@ -93,7 +93,7 @@ const data: PublicationType[] = [
     paperurl: "https://arxiv.org/abs/2312.03414",
     codeurl: "https://arxiv.org/abs/2312.03414",
     projecturl: "https://janghyun1230.github.io/memory",
-    bibtex: "bib/ccm23.bib",
+    bibtex: "bib/ccm23.txt",
     imgpath: ccm23_img,
   },
   {
@@ -117,7 +117,7 @@ const data: PublicationType[] = [
     paperurl: "https://arxiv.org/abs/2307.03486",
     codeurl: "https://github.com/snu-mllab/Achievement-Distillation",
     projecturl: null,
-    bibtex: "bib/ad23.bib",
+    bibtex: "bib/ad23.txt",
     imgpath: ad23_img,
   },
 ]
@@ -180,7 +180,7 @@ const testimg = "https://symoon11.github.io/images/moon23neurips.gif"
 
 nav {
   font-size: 12px;
-  margin-top: 0.3em;
+  margin-top: 0.5em;
   padding-left: 0;
 }
 
@@ -197,7 +197,7 @@ nav a:first-of-type {
 }
 
 .paper-source {
-  margin-top: 0.3em;
+  margin-top: 0.5em;
 }
 
 .paper-info {
@@ -205,7 +205,8 @@ nav a:first-of-type {
 }
 
 .paper-detail {
-  margin-top: 0.3em;
+  padding-top: 0.5em;
 }
+
 </style>
 
