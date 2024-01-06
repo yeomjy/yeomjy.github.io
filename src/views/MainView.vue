@@ -1,44 +1,42 @@
 <script setup lang="ts">
-import Skills from "@/components/ProgrammingSkills.vue"
-import TA from "@/components/TeachingExperience.vue"
-import About from "@/components/MyInfo.vue"
-import Profile from "@/components/ProfileImage.vue"
+import Profile from "@/components/ProfileSection.vue"
+import Content from "@/components/ContentSection.vue"
 </script>
 <template>
-  <v-container>
+  <v-container id="main-view" fluid>
     <v-row>
-      <v-col>
-        <Profile />
+      <v-spacer />
+      <v-col cols="11" xl="8">
+        <v-row>
+          <v-col cols="12" sm="12" md="4" xl="3" class="profile-section">
+            <Profile />
+          </v-col>
+          <v-col cols="12" sm="12" md="8" xl="9" class="content-section">
+            <Content />
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-footer>
+            <v-card>
+              <v-card-text>
+                This page is built with <a href="https://vuejs.org">Vue.js</a> and
+                <a href="https://vuetifyjs.com/en/">Vuetify</a> framework. The
+                design of this page is motivated by
+                <a href="https://github.com/evryn/vue-modern-resume"
+                >evryn's template</a
+                >
+                and
+                <a href="https://github.com/jonbarron/website"
+                >Jon Barron's template</a
+                >. The source code of this website is available at
+                <a href="https://github.com/yeomjy/yeomjy.github.io">my github</a
+                >.
+              </v-card-text>
+            </v-card>
+          </v-footer>
+        </v-row>
       </v-col>
-    </v-row>
-    <v-row>
-      <v-col>
-        <h1 class="name">Junyoung Yeom</h1>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col>
-        <nav>
-          <a href="https://github.com/yeomjy">GitHub</a>
-          <a href="mailto:yeomjy111@gmail.com">Email</a>
-          <a href="https://yeomjy.com/blog">Blog</a>
-        </nav>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col>
-        <About />
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col>
-        <Skills />
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col>
-        <TA />
-      </v-col>
+      <v-spacer />
     </v-row>
   </v-container>
 </template>
@@ -48,21 +46,17 @@ import Profile from "@/components/ProfileImage.vue"
   text-align: center;
 }
 
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
+.profile-section {
+  background-color: white;
 }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-  background-color: transparent;
+.content-section {
+  background-color: white;
 }
 
-nav a:first-of-type {
-  border: 0;
+#main-view {
+  height: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 </style>
