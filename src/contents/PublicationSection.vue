@@ -1,8 +1,6 @@
 <script lang="ts" setup>
 import ad23_img from "@/assets/pub/img/ad23.gif"
 import ccm23_img from "@/assets/pub/img/ccm23.png"
-import ad23_bib from "@/assets/pub/bib/ad23.txt"
-import ccm23_bib from "@/assets/pub/bib/ccm23.txt"
 
 type AuthorType = {
   firstname: string
@@ -95,7 +93,7 @@ const data: PublicationType[] = [
     paperurl: "https://arxiv.org/abs/2312.03414",
     codeurl: "https://arxiv.org/abs/2312.03414",
     projecturl: "https://janghyun1230.github.io/memory",
-    bibtex: ccm23_bib,
+    bibtex: "public/bib/ccm23.bib",
     imgpath: ccm23_img,
   },
   {
@@ -119,7 +117,7 @@ const data: PublicationType[] = [
     paperurl: "https://arxiv.org/abs/2307.03486",
     codeurl: "https://github.com/snu-mllab/Achievement-Distillation",
     projecturl: null,
-    bibtex: ad23_bib,
+    bibtex: "public/bib/ad23.bib",
     imgpath: ad23_img,
   },
 ]
