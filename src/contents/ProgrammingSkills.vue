@@ -44,7 +44,6 @@ const data: ProgrammingSkillType[] = [
         no-gutters
         align="center"
       >
-        <v-spacer />
         <v-col cols="1" class="progress">
           <v-progress-circular
             :model-value="item.score"
@@ -54,8 +53,7 @@ const data: ProgrammingSkillType[] = [
             {{ item.score }}
           </v-progress-circular>
         </v-col>
-        <v-spacer />
-        <v-col cols="9" sm="10" md="10" lg="10" xl="10">
+        <v-col cols="10">
           <v-card flat density="compact">
             <v-card-title>
               {{ item.name }}
@@ -81,7 +79,8 @@ const data: ProgrammingSkillType[] = [
 }
 
 .progress {
-  //margin-left: 1.5em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
 
 </style>
