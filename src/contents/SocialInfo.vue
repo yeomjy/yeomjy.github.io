@@ -18,7 +18,7 @@ const data: SocialInfoType[] = [
     name: "Blog",
     url: "yeomjy.com/blog",
     protocol: "https://",
-    icon: "fas fa-blog",
+    icon: "fa-solid fa-b",
   },
   {
     name: "LinkedIn",

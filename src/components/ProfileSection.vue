@@ -16,9 +16,22 @@ import Social from "@/contents/SocialInfo.vue"
       <v-row no-gutters>
         <v-col>
           <nav>
-            <a href="https://github.com/yeomjy">GitHub</a>
-            <a href="mailto:yeomjy111@gmail.com">Email</a>
-            <a href="https://scholar.google.com/citations?user=L0TXeqoAAAAJ">Google Scholar</a>
+            <v-btn icon class="link-btn"
+              href="https://github.com/yeomjy"
+              target="_blank">
+              <v-icon icon="fa-brands fa-github" />
+            </v-btn>
+            <v-btn icon class="link-btn"
+              href="mailto:yeomjy@mllab.snu.ac.kr"
+            >
+              <v-icon icon="fa-solid fa-envelope" />
+            </v-btn>
+            <v-btn icon
+             href="https://scholar.google.com/citations?user=L0TXeqoAAAAJ"
+             target="_blank"
+            >
+              <v-icon icon="fa-brands fa-google-scholar" />
+            </v-btn>
           </nav>
         </v-col>
       </v-row>
@@ -29,11 +42,6 @@ import Social from "@/contents/SocialInfo.vue"
         </v-col>
       </v-row>
 
-<!--      <v-row>-->
-<!--        <v-col>-->
-<!--          <About />-->
-<!--        </v-col>-->
-<!--      </v-row>-->
       <v-row>
         <v-col>
           <Education />
@@ -45,22 +53,25 @@ import Social from "@/contents/SocialInfo.vue"
 
 <style scoped>
 
+.link-btn {
+  margin-right: 2em;
+}
+
 nav {
   width: 100%;
-  font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1em;
 }
+
 
 nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-  background-color: transparent;
+  color: unset;
 }
 
-nav a:first-of-type {
-  border: 0;
+@media (hover: hover) {
+  nav a:hover {
+    background-color: transparent;
+  }
 }
 
 .sidebar {
