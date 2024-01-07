@@ -91,7 +91,7 @@ const data: PublicationType[] = [
       "Therefore, we propose a novel context compression algorithm for Large Language Models " +
       "that can be trained with lightweight adapter.",
     paperurl: "https://arxiv.org/abs/2312.03414",
-    codeurl: "https://arxiv.org/abs/2312.03414",
+    codeurl: "https://github.com/snu-mllab/Context-Memory",
     projecturl: "https://janghyun1230.github.io/memory",
     bibtex: "bib/ccm23.txt",
     imgpath: ccm23_img,
@@ -188,16 +188,21 @@ nav a {
   display: inline-block;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
-  background-color: transparent;
+  /* background-color: transparent; */
 }
 
-nav a:first-of-type {
+/* nav a:first-of-type {
   border: 0;
   padding-left: 0;
+} */
+
+nav a:last-of-type {
+    border-right: 1px solid var(--color-border);
 }
 
 .paper-source {
   margin-top: 0.5em;
+  font-style: italic;
 }
 
 .paper-info {
