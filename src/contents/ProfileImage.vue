@@ -1,11 +1,11 @@
 <script setup lang="ts"></script>
 <template>
-  <v-avatar size="250" class="profile">
+  <v-avatar size="200" class="profile">
     <img
       alt="Profile Image"
-      src="../assets/profile.jpeg"
-      width="250"
-      height="250"
+      src="../assets/profile.png"
+      width="200"
+      height="200"
     />
   </v-avatar>
   <h1 class="name">Junyoung Yeom</h1>
