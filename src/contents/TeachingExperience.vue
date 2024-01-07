@@ -26,7 +26,7 @@ const data: TeachingExperience[] = [
 <template>
   <v-card flat>
     <v-card-title>
-      <h2 class="title font-weight-light mb-1">
+      <h2 class="title font-weight-light mb-1 text-wrap">
         Teaching Experience
       </h2>
     </v-card-title>
@@ -34,7 +34,7 @@ const data: TeachingExperience[] = [
       <v-row v-for="(item, i) in data" :key="i" no-gutters>
         <v-col>
           <v-card flat density="compact" class="ta-list" >
-            <v-card-title class="ta-title">
+            <v-card-title class="ta-title text-wrap">
               {{ item.id }} {{ item.title }}
             </v-card-title>
             <v-card-text>

@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 import ad23_img from "@/assets/pub/img/ad23.gif"
 import ccm23_img from "@/assets/pub/img/ccm23.png"
 
@@ -134,12 +134,12 @@ const testimg = "https://symoon11.github.io/images/moon23neurips.gif"
         :key="i"
         align="center"
       >
-        <v-col cols="3">
+        <v-col cols="4" md="4">
           <v-img :src="item.imgpath" />
         </v-col>
-        <v-col cols="9">
+        <v-col cols="8" md="8">
           <v-card flat density="compact">
-            <v-card-title class="publication-title text-wrap">
+            <v-card-title class="publication-title text-wrap" style="word-break: keep-all;">
               {{ item.title }}
             </v-card-title>
             <v-card-subtitle class="paper-info">

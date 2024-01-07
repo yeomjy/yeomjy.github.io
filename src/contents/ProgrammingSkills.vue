@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 type ProgrammingSkillType = {
   name: string
   score: number
@@ -20,7 +20,7 @@ const data: ProgrammingSkillType[] = [
     score: 80,
     detail:
       "Developed and deployed fully working backend api service for " +
-      "team project twice, with async task queue, scheduled jobs, and machine learning feature.",
+      "term project twice, with async task queue, scheduled jobs, and machine learning feature.",
     color: "green",
   },
   {

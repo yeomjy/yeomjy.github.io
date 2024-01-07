@@ -35,11 +35,11 @@ const data: SocialInfoType[] = [
       <h2 class="title font-weight-light mb-1">Social</h2>
     </v-card-title>
     <v-card-text>
-      <v-row v-for="(item, i) in data" :key="i" no-gutters align="center">
+      <v-row v-for="(item, i) in data" :key="i" no-gutters>
         <v-col cols="1">
-          <v-icon :icon="item.icon"></v-icon>
+          <v-icon :icon="item.icon" class="icon"></v-icon>
         </v-col>
-        <v-col cols="10">
+        <v-col cols="11">
           <v-card flat>
             <v-card-title>{{ item.name }}</v-card-title>
             <v-card-subtitle class="text-wrap">
@@ -57,6 +57,10 @@ const data: SocialInfoType[] = [
 .title {
   border-bottom: 2px #bfbfbf solid;
   line-height: 1.5 !important;
+}
+
+.icon {
+  margin-top: 0.65em;
 }
 
 </style>

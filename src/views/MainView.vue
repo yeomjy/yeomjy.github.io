@@ -16,7 +16,7 @@ import Content from "@/components/ContentSection.vue"
           </v-col>
         </v-row>
         <v-row>
-          <v-footer>
+          <v-col>
             <v-card>
               <v-card-text>
                 This page is built with <a href="https://vuejs.org">Vue.js</a> and
@@ -33,7 +33,7 @@ import Content from "@/components/ContentSection.vue"
                 >.
               </v-card-text>
             </v-card>
-          </v-footer>
+          </v-col>
         </v-row>
       </v-col>
       <v-spacer />
