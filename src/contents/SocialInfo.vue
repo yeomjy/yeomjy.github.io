@@ -21,7 +21,7 @@ const data: SocialInfoType[] = [
   },
   {
     name: "LinkedIn",
-    url: "www.linkedin.com/in/junyoung-yeom-21525a244",
+    url: "www.linkedin.com/in/yeomjy",
     protocol: "https://",
     icon: "fab fa-linkedin-in",
   },
