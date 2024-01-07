@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import Profile from "@/contents/ProfileImage.vue"
-import About from "@/contents/AboutMe.vue"
 import Education from "@/contents/EducationInfo.vue"
 import Social from "@/contents/SocialInfo.vue"
 </script>
@@ -16,19 +15,21 @@ import Social from "@/contents/SocialInfo.vue"
       <v-row no-gutters>
         <v-col>
           <nav>
-            <v-btn icon class="link-btn"
+            <v-btn
+              icon
+              class="link-btn"
               href="https://github.com/yeomjy"
-              target="_blank">
+              target="_blank"
+            >
               <v-icon icon="fa-brands fa-github" />
             </v-btn>
-            <v-btn icon class="link-btn"
-              href="mailto:yeomjy@mllab.snu.ac.kr"
-            >
+            <v-btn icon class="link-btn" href="mailto:yeomjy@mllab.snu.ac.kr">
               <v-icon icon="fa-solid fa-envelope" />
             </v-btn>
-            <v-btn icon
-             href="https://scholar.google.com/citations?user=L0TXeqoAAAAJ"
-             target="_blank"
+            <v-btn
+              icon
+              href="https://scholar.google.com/citations?user=L0TXeqoAAAAJ"
+              target="_blank"
             >
               <v-icon icon="fa-brands fa-google-scholar" />
             </v-btn>
@@ -52,7 +53,6 @@ import Social from "@/contents/SocialInfo.vue"
 </template>
 
 <style scoped>
-
 .link-btn {
   margin-right: 2em;
 }
@@ -62,7 +62,6 @@ nav {
   text-align: center;
   margin-top: 1em;
 }
-
 
 nav a {
   color: unset;

@@ -6,16 +6,6 @@ import AboutMe from "@/contents/AboutMe.vue"
 </script>
 
 <template>
-<!--  <v-row>-->
-<!--    <v-col>-->
-<!--      <About />-->
-<!--    </v-col>-->
-<!--  </v-row>-->
-<!--  <v-row>-->
-<!--    <v-col>-->
-<!--      <Education />-->
-<!--    </v-col>-->
-<!--  </v-row>-->
   <v-card class="main-section">
     <v-container fluid>
       <v-row>

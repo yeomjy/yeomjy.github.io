@@ -17,17 +17,18 @@ const data: EducationDataType[] = [
     degree: "M.S. & Ph.D. in Computer Science and Engineering",
     logo: snulogo,
     advisor: "Hyun Oh Song",
-    advisor_url: "https://mllab.snu.ac.kr/hyunoh"
+    advisor_url: "https://mllab.snu.ac.kr/hyunoh",
   },
   {
     name: "Seoul National University",
     start: "2019.03",
     end: "2024.02",
-    degree: "B.S. in Computer Science and Engineering <br /> B.S. in Mathematical Sciences",
+    degree:
+      "B.S. in Computer Science and Engineering <br /> B.S. in Mathematical Sciences",
     logo: snulogo,
     advisor: null,
     advisor_url: null,
-  }
+  },
 ]
 </script>
 
@@ -37,11 +38,7 @@ const data: EducationDataType[] = [
       <h2 class="title font-weight-light mb-1">Education</h2>
     </v-card-title>
     <v-card-text class="skills-list-container">
-      <v-row
-        v-for="(item, i) in data"
-        :key="i"
-        no-gutters
-      >
+      <v-row v-for="(item, i) in data" :key="i" no-gutters>
         <v-col cols="1" class="logo">
           <v-img :src="item.logo" />
         </v-col>
@@ -54,15 +51,12 @@ const data: EducationDataType[] = [
               {{ item.start }} - {{ item.end }}
             </v-card-subtitle>
             <v-card-text>
-              <div v-html="item.degree">
-              </div>
+              <div v-html="item.degree"></div>
               <div v-if="item.advisor !== null">
                 <div v-if="item.advisor_url !== null">
                   Advisor: <a :href="item.advisor_url">{{ item.advisor }}</a>
                 </div>
-                <div v-else>
-                  Advisor: {{ item.advisor }}
-                </div>
+                <div v-else>Advisor: {{ item.advisor }}</div>
               </div>
             </v-card-text>
           </v-card>
@@ -88,6 +82,4 @@ const data: EducationDataType[] = [
 .logo {
   margin-top: 1em;
 }
-
-
 </style>

@@ -19,17 +19,19 @@ import Content from "@/components/ContentSection.vue"
           <v-col>
             <v-card>
               <v-card-text>
-                This page is built with <a href="https://vuejs.org">Vue.js</a> and
+                This page is built with
+                <a href="https://vuejs.org">Vue.js</a> and
                 <a href="https://vuetifyjs.com/en/">Vuetify</a> framework. The
                 design of this page is motivated by
                 <a href="https://github.com/evryn/vue-modern-resume"
-                >evryn's template</a
+                  >evryn's template</a
                 >
                 and
                 <a href="https://github.com/jonbarron/website"
-                >Jon Barron's template</a
+                  >Jon Barron's template</a
                 >. The source code of this website is available at
-                <a href="https://github.com/yeomjy/yeomjy.github.io">my github</a
+                <a href="https://github.com/yeomjy/yeomjy.github.io"
+                  >my github</a
                 >.
               </v-card-text>
             </v-card>

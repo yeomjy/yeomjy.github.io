@@ -20,7 +20,6 @@ type PublicationType = {
   imgpath: string
 }
 
-
 function author_tag(a: AuthorType) {
   const name = author_name(a)
 
@@ -36,25 +35,22 @@ function author_name_tag(author_list: AuthorType[]) {
 
 function author_name(a: AuthorType) {
   const name = `${a.firstname} ${a.lastname}`
-  if (a === myinfo)
-    return `<b>${name}</b>`
-  else
-    return name
+  if (a === myinfo) return `<b>${name}</b>`
+  else return name
 }
-
 
 // Author info in MLLAB
 
 const myinfo: AuthorType = {
   firstname: "Junyoung",
   lastname: "Yeom",
-  homepage: "https://yeomjy.com"
+  homepage: "https://yeomjy.com",
 }
 
 const professorinfo: AuthorType = {
   firstname: "Hyun Oh",
   lastname: "Song",
-  homepage: "https://mllab.snu.ac.kr/hyunoh"
+  homepage: "https://mllab.snu.ac.kr/hyunoh",
 }
 
 const jhinfo: AuthorType = {
@@ -97,7 +93,8 @@ const data: PublicationType[] = [
     imgpath: ccm23_img,
   },
   {
-    title: "Discovering Hierarchical Achievements in Reinforcement Learning via Contrastive Learning",
+    title:
+      "Discovering Hierarchical Achievements in Reinforcement Learning via Contrastive Learning",
     source: "NeurIPS",
     year: 2023,
     authors: [
@@ -110,7 +107,8 @@ const data: PublicationType[] = [
       },
       professorinfo,
     ],
-    detail: "Reinforcement learning in procedurally generated environments " +
+    detail:
+      "Reinforcement learning in procedurally generated environments " +
       "with hierarchical achievements is a challenging problem. " +
       "We propose a novel contrastive learning method that can be trained jointly " +
       "with model-free RL algorithms such as PPO.",
@@ -121,7 +119,6 @@ const data: PublicationType[] = [
     imgpath: ad23_img,
   },
 ]
-const testimg = "https://symoon11.github.io/images/moon23neurips.gif"
 </script>
 <template>
   <v-card flat>
@@ -129,28 +126,32 @@ const testimg = "https://symoon11.github.io/images/moon23neurips.gif"
       <h2 class="title font-weight-light mb-1">Publications</h2>
     </v-card-title>
     <v-card-text>
-      <v-row
-        v-for="(item, i) in data"
-        :key="i"
-        align="center"
-      >
+      <v-row v-for="(item, i) in data" :key="i" align="center">
         <v-col cols="4" md="4">
           <v-img :src="item.imgpath" />
         </v-col>
         <v-col cols="8" md="8">
           <v-card flat density="compact">
-            <v-card-title class="publication-title text-wrap" style="word-break: keep-all;">
+            <v-card-title
+              class="publication-title text-wrap"
+              style="word-break: keep-all"
+            >
               {{ item.title }}
             </v-card-title>
             <v-card-subtitle class="paper-info">
-              <div v-html="author_name_tag(item.authors)" class="text-wrap"></div>
+              <div
+                v-html="author_name_tag(item.authors)"
+                class="text-wrap"
+              ></div>
               <div class="paper-source text-wrap">
                 {{ item.source }}, {{ item.year }}
               </div>
               <nav class="text-wrap">
                 <a :href="item.paperurl">Paper</a>
                 <a :href="item.codeurl">Code</a>
-                <a v-if="item.projecturl !== null" :href="item.projecturl">Project Page</a>
+                <a v-if="item.projecturl !== null" :href="item.projecturl"
+                  >Project Page</a
+                >
                 <a :href="item.bibtex">BibTeX</a>
               </nav>
             </v-card-subtitle>
@@ -197,7 +198,7 @@ nav a {
 } */
 
 nav a:last-of-type {
-    border-right: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
 }
 
 .paper-source {
@@ -212,6 +213,4 @@ nav a:last-of-type {
 .paper-detail {
   padding-top: 0.5em;
 }
-
 </style>
-

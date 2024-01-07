@@ -38,12 +38,7 @@ const data: ProgrammingSkillType[] = [
       <h2 class="title font-weight-light mb-1">Programming Skills</h2>
     </v-card-title>
     <v-card-text class="skills-list-container">
-      <v-row
-        v-for="(item, i) in data"
-        :key="i"
-        no-gutters
-        align="center"
-      >
+      <v-row v-for="(item, i) in data" :key="i" no-gutters align="center">
         <v-col cols="1" class="progress">
           <v-progress-circular
             :model-value="item.score"
@@ -82,5 +77,4 @@ const data: ProgrammingSkillType[] = [
   margin-left: 1.5em;
   margin-right: 1.5em;
 }
-
 </style>

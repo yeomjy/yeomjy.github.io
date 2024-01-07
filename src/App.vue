@@ -5,7 +5,7 @@ import MainView from "./views/MainView.vue"
 <template>
   <v-app id="main">
     <v-main>
-      <MainView/>
+      <MainView />
     </v-main>
   </v-app>
 </template>

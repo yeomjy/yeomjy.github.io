@@ -33,7 +33,7 @@ const data: TeachingExperience[] = [
     <v-card-text class="ta-list-container">
       <v-row v-for="(item, i) in data" :key="i" no-gutters>
         <v-col>
-          <v-card flat density="compact" class="ta-list" >
+          <v-card flat density="compact" class="ta-list">
             <v-card-title class="ta-title text-wrap">
               {{ item.id }} {{ item.title }}
             </v-card-title>
@@ -58,7 +58,4 @@ const data: TeachingExperience[] = [
 .ta-list-container {
   padding-left: 0;
 }
-
-
-
 </style>

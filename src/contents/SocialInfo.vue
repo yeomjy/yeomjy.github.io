@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 type SocialInfoType = {
   name: string
   url: string
@@ -53,7 +52,6 @@ const data: SocialInfoType[] = [
 </template>
 
 <style scoped>
-
 .title {
   border-bottom: 2px #bfbfbf solid;
   line-height: 1.5 !important;
@@ -62,5 +60,4 @@ const data: SocialInfoType[] = [
 .icon {
   margin-top: 0.65em;
 }
-
 </style>

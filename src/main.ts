@@ -20,8 +20,8 @@ const vuetify = createVuetify({
     aliases,
     sets: {
       fa,
-    }
-  }
+    },
+  },
 })
 const app = createApp(App)
 
