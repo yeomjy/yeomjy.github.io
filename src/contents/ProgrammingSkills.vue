@@ -8,7 +8,7 @@ type ProgrammingSkillType = {
 const data: ProgrammingSkillType[] = [
   {
     name: "PyTorch",
-    score: 85,
+    score: 90,
     detail:
       "Contributed to deep learning research on reinforcement learning and NLP. " +
       "Reproduced several well-known RL algorithms such as PPO, SAC, TD3. " +
@@ -50,7 +50,7 @@ const data: ProgrammingSkillType[] = [
         </v-col>
         <v-col cols="10">
           <v-card flat density="compact">
-            <v-card-title>
+            <v-card-title class="text-wrap">
               {{ item.name }}
             </v-card-title>
             <v-card-text>
