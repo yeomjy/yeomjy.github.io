@@ -23,7 +23,7 @@ const data: EducationDataType[] = [
     name: "Seoul National University",
     start: "2019.03",
     end: "2024.02",
-    degree: "B.S. in Computer Science and Engineering & B.S. in Mathematical Sciences",
+    degree: "B.S. in Computer Science and Engineering <br /> B.S. in Mathematical Sciences",
     logo: snulogo,
     advisor: null,
     advisor_url: null,
@@ -51,10 +51,11 @@ const data: EducationDataType[] = [
               {{ item.name }}
             </v-card-title>
             <v-card-subtitle>
-              {{ item.start }} ~ {{ item.end }}
+              {{ item.start }} - {{ item.end }}
             </v-card-subtitle>
             <v-card-text>
-              {{ item.degree }}
+              <div v-html="item.degree">
+              </div>
               <div v-if="item.advisor !== null">
                 <div v-if="item.advisor_url !== null">
                   Advisor: <a :href="item.advisor_url">{{ item.advisor }}</a>

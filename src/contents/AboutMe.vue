@@ -9,7 +9,7 @@
     </v-card-title>
     <v-card-text>
       My name is Junyoung Yeom. I'm an undergraduate student majoring in Computer
-      Science and Engineering and Mathematics.
+      Science and Mathematics.
       Currently, I'm working as an undergraduate research intern at
       <a href="https://mllab.snu.ac.kr">Machine Learning Lab</a>, Seoul National University,
       advised by <a href="https://mllab.snu.ac.kr/hyunoh">Hyun Oh Song</a>.
