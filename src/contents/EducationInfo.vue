@@ -39,12 +39,12 @@ const data: EducationDataType[] = [
     </v-card-title>
     <v-card-text class="skills-list-container">
       <v-row v-for="(item, i) in data" :key="i" no-gutters>
-        <v-col cols="1" class="logo">
+        <v-col cols="2" class="logo">
           <v-img :src="item.logo" />
         </v-col>
         <v-col cols="10">
           <v-card flat>
-            <v-card-title class="text-wrap">
+            <v-card-title class="text-wrap education-title">
               {{ item.name }}
             </v-card-title>
             <v-card-subtitle>
@@ -73,6 +73,7 @@ const data: EducationDataType[] = [
 }
 .education-title {
   font-size: medium;
+  font-weight: bold;
 }
 
 .edu-list-container {
