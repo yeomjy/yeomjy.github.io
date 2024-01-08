@@ -76,7 +76,7 @@ const data: PublicationType[] = [
       {
         firstname: "Sangdoo",
         lastname: "Yun",
-        homepage: null,
+        homepage: "https://sangdooyun.github.io",
       },
       professorinfo,
     ],
