@@ -144,7 +144,7 @@ const data: PublicationType[] = [
                 class="text-wrap"
               ></div>
               <div class="paper-source text-wrap">
-                {{ item.source }}, {{ item.year }}
+                {{ item.source }} {{ item.year }}
               </div>
               <nav class="text-wrap">
                 <a :href="item.paperurl">Paper</a>
