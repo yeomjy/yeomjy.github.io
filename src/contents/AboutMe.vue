@@ -13,7 +13,7 @@
       research interests lie in the intersection of mathematics, deep learning,
       and theoretical computer science. Specifically, I'm interested in Neural
       Combinatorial Optimization, Neural Algorithmic Reasoning, Geometric Deep
-      Learning, Machine Learning Theory, and Neural Program Synthesis.
+      Learning, Computational Learning Theory, and Neural Program Synthesis.
     </v-card-text>
   </v-card>
 </template>
