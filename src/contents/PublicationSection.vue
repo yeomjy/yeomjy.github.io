@@ -20,8 +20,7 @@ type PublicationType = {
   imgpath: string
 }
 
-
-function author_name(a: AuthorType) {
+function get_name(a: AuthorType) {
   return `${a.firstname} ${a.lastname}`
 }
 
@@ -50,7 +49,6 @@ const symoon: AuthorType = {
   lastname: "Moon",
   homepage: "https://symoon11.github.io",
 }
-
 
 const data: PublicationType[] = [
   {
@@ -127,15 +125,17 @@ const data: PublicationType[] = [
             </v-card-title>
             <v-card-subtitle class="paper-info">
               <div class="text-wrap">
-                <span v-for="(author, i) in item.authors">
-                  <span v-if="author === jyyeom">
-                    <a :href="author.homepage"><b>{{ author_name(author) }}</b></a>
+                <span v-for="(author, i) in item.authors" :key="i">
+                  <span v-if="author === jyyeom && author.homepage !== null">
+                    <a :href="author.homepage">
+                      <b>{{ get_name(author) }}</b>
+                    </a>
                   </span>
                   <span v-else-if="author.homepage !== null">
-                    <a :href="author.homepage">{{ author_name(author) }} </a>
+                    <a :href="author.homepage">{{ get_name(author) }} </a>
                   </span>
                   <span v-else>
-                    {{ author_name(author) }}
+                    {{ get_name(author) }}
                   </span>
                   <template v-if="i < item.authors.length - 1">, </template>
                 </span>
