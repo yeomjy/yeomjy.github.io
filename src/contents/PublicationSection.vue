@@ -68,8 +68,8 @@ const syinfo: AuthorType = {
 const data: PublicationType[] = [
   {
     title: "Compressed Context Memory For Online Language Model Interaction",
-    source: "arXiv",
-    year: 2023,
+    source: "ICLR",
+    year: 2024,
     authors: [
       jhinfo,
       myinfo,
