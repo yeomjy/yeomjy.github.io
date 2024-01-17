@@ -20,50 +20,37 @@ type PublicationType = {
   imgpath: string
 }
 
-function author_tag(a: AuthorType) {
-  const name = author_name(a)
-
-  if (a.homepage !== null) {
-    return `<a href="${a.homepage}">${name}</a>`
-  } else {
-    return `<span>${name}</span>`
-  }
-}
-function author_name_tag(author_list: AuthorType[]) {
-  return author_list.map(author_tag).join(", ")
-}
 
 function author_name(a: AuthorType) {
-  const name = `${a.firstname} ${a.lastname}`
-  if (a === myinfo) return `<b>${name}</b>`
-  else return name
+  return `${a.firstname} ${a.lastname}`
 }
 
 // Author info in MLLAB
 
-const myinfo: AuthorType = {
+const jyyeom: AuthorType = {
   firstname: "Junyoung",
   lastname: "Yeom",
   homepage: "https://yeomjy.com",
 }
 
-const professorinfo: AuthorType = {
+const hosong: AuthorType = {
   firstname: "Hyun Oh",
   lastname: "Song",
   homepage: "https://mllab.snu.ac.kr/hyunoh",
 }
 
-const jhinfo: AuthorType = {
+const jhkim: AuthorType = {
   firstname: "Jang-Hyun",
   lastname: "Kim",
   homepage: "https://janghyun1230.github.io",
 }
 
-const syinfo: AuthorType = {
+const symoon: AuthorType = {
   firstname: "Seungyong",
   lastname: "Moon",
   homepage: "https://symoon11.github.io",
 }
+
 
 const data: PublicationType[] = [
   {
@@ -71,14 +58,14 @@ const data: PublicationType[] = [
     source: "ICLR",
     year: 2024,
     authors: [
-      jhinfo,
-      myinfo,
+      jhkim,
+      jyyeom,
       {
         firstname: "Sangdoo",
         lastname: "Yun",
         homepage: "https://sangdooyun.github.io",
       },
-      professorinfo,
+      hosong,
     ],
     detail:
       "In modern NLP systems such as ChatGPT, the contextual information grows continuously " +
@@ -98,14 +85,14 @@ const data: PublicationType[] = [
     source: "NeurIPS",
     year: 2023,
     authors: [
-      syinfo,
-      myinfo,
+      symoon,
+      jyyeom,
       {
         firstname: "Bumsoo",
         lastname: "Park",
         homepage: null,
       },
-      professorinfo,
+      hosong,
     ],
     detail:
       "Reinforcement learning in procedurally generated environments " +
@@ -139,10 +126,21 @@ const data: PublicationType[] = [
               {{ item.title }}
             </v-card-title>
             <v-card-subtitle class="paper-info">
-              <div
-                v-html="author_name_tag(item.authors)"
-                class="text-wrap"
-              ></div>
+              <div class="text-wrap">
+                <span v-for="(author, i) in item.authors">
+                  <span v-if="author === jyyeom">
+                    <a :href="author.homepage"><b>{{ author_name(author) }}</b></a>
+                  </span>
+                  <span v-else-if="author.homepage !== null">
+                    <a :href="author.homepage">{{ author_name(author) }} </a>
+                  </span>
+                  <span v-else>
+                    {{ author_name(author) }}
+                  </span>
+                  <template v-if="i < item.authors.length - 1">, </template>
+                </span>
+              </div>
+
               <div class="paper-source text-wrap">
                 {{ item.source }} {{ item.year }}
               </div>
