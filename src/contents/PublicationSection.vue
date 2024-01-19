@@ -112,10 +112,10 @@ const data: PublicationType[] = [
     </v-card-title>
     <v-card-text>
       <v-row v-for="(item, i) in data" :key="i" align="center">
-        <v-col cols="4" md="4">
+        <v-col cols="6" md="4">
           <v-img :src="item.imgpath" />
         </v-col>
-        <v-col cols="8" md="8">
+        <v-col cols="6" md="8">
           <v-card flat density="compact">
             <v-card-title
               class="publication-title text-wrap"

@@ -76,6 +76,7 @@ const data: EducationDataType[] = [
   font-weight: bold;
   margin-bottom: 0;
   padding-bottom: 0;
+  padding-right: 0;
 }
 
 .logo {
