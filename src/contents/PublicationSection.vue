@@ -134,9 +134,6 @@ const data: PublicationType[] = [
                 {{ item.title }}
               </v-card-title>
               <v-card-subtitle class="paper-info">
-                <div>
-                  <v-img :src="item.imgpath" />
-                </div>
                 <div class="text-wrap">
                   <span v-for="(author, i) in item.authors" :key="i">
                     <span v-if="author === jyyeom && author.homepage !== null">
@@ -167,6 +164,9 @@ const data: PublicationType[] = [
                 </nav>
               </v-card-subtitle>
               <v-card-text class="paper-detail">
+                <div>
+                  <v-img :src="item.imgpath" />
+                </div>
                 {{ item.detail }}
               </v-card-text>
             </v-card>
