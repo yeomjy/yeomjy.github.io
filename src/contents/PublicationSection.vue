@@ -1,6 +1,21 @@
 <script setup lang="ts">
+import { useDisplay } from "vuetify"
 import ad23_img from "@/assets/pub/img/ad23.gif"
 import ccm24_img from "@/assets/pub/img/ccm24.png"
+
+const display = useDisplay()
+const display_name = display.name
+console.log(display_name.value)
+function is_mobile() {
+  switch (display_name.value) {
+    case "xs":
+      return true
+    case "sm":
+      return true
+    default:
+      return false
+  }
+}
 
 type AuthorType = {
   firstname: string
@@ -112,52 +127,97 @@ const data: PublicationType[] = [
     </v-card-title>
     <v-card-text>
       <v-row v-for="(item, i) in data" :key="i" align="center">
-        <v-col cols="6" md="4">
-          <v-img :src="item.imgpath" />
-        </v-col>
-        <v-col cols="6" md="8">
-          <v-card flat density="compact">
-            <v-card-title
-              class="publication-title text-wrap"
-              style="word-break: keep-all"
-            >
-              {{ item.title }}
-            </v-card-title>
-            <v-card-subtitle class="paper-info">
-              <div class="text-wrap">
-                <span v-for="(author, i) in item.authors" :key="i">
-                  <span v-if="author === jyyeom && author.homepage !== null">
-                    <a :href="author.homepage">
-                      <b>{{ get_name(author) }}</b>
-                    </a>
+        <template v-if="is_mobile()">
+          <v-col cols="12">
+            <v-card flat density="compact">
+              <v-card-title class="publication-title text-wrap">
+                {{ item.title }}
+              </v-card-title>
+              <v-card-subtitle class="paper-info">
+                <div>
+                  <v-img :src="item.imgpath" />
+                </div>
+                <div class="text-wrap">
+                  <span v-for="(author, i) in item.authors" :key="i">
+                    <span v-if="author === jyyeom && author.homepage !== null">
+                      <a :href="author.homepage">
+                        <b>{{ get_name(author) }}</b>
+                      </a>
+                    </span>
+                    <span v-else-if="author.homepage !== null">
+                      <a :href="author.homepage">{{ get_name(author) }} </a>
+                    </span>
+                    <span v-else>
+                      {{ get_name(author) }}
+                    </span>
+                    <template v-if="i < item.authors.length - 1">, </template>
                   </span>
-                  <span v-else-if="author.homepage !== null">
-                    <a :href="author.homepage">{{ get_name(author) }} </a>
-                  </span>
-                  <span v-else>
-                    {{ get_name(author) }}
-                  </span>
-                  <template v-if="i < item.authors.length - 1">, </template>
-                </span>
-              </div>
+                </div>
 
-              <div class="paper-source text-wrap">
-                {{ item.source }} {{ item.year }}
-              </div>
-              <nav class="text-wrap">
-                <a :href="item.paperurl">Paper</a>
-                <a :href="item.codeurl">Code</a>
-                <a v-if="item.projecturl !== null" :href="item.projecturl"
-                  >Project Page</a
-                >
-                <a :href="item.bibtex">BibTeX</a>
-              </nav>
-            </v-card-subtitle>
-            <v-card-text class="paper-detail">
-              {{ item.detail }}
-            </v-card-text>
-          </v-card>
-        </v-col>
+                <div class="paper-source text-wrap">
+                  {{ item.source }} {{ item.year }}
+                </div>
+                <nav class="text-wrap">
+                  <a :href="item.paperurl">Paper</a>
+                  <a :href="item.codeurl">Code</a>
+                  <a v-if="item.projecturl !== null" :href="item.projecturl"
+                    >Project Page</a
+                  >
+                  <a :href="item.bibtex">BibTeX</a>
+                </nav>
+              </v-card-subtitle>
+              <v-card-text class="paper-detail">
+                {{ item.detail }}
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </template>
+
+        <template v-else>
+          <v-col cols="4" md="4">
+            <v-img :src="item.imgpath" />
+          </v-col>
+          <v-col cols="8" md="8">
+            <v-card flat density="compact">
+              <v-card-title class="publication-title text-wrap">
+                {{ item.title }}
+              </v-card-title>
+              <v-card-subtitle class="paper-info">
+                <div class="text-wrap">
+                  <span v-for="(author, i) in item.authors" :key="i">
+                    <span v-if="author === jyyeom && author.homepage !== null">
+                      <a :href="author.homepage">
+                        <b>{{ get_name(author) }}</b>
+                      </a>
+                    </span>
+                    <span v-else-if="author.homepage !== null">
+                      <a :href="author.homepage">{{ get_name(author) }} </a>
+                    </span>
+                    <span v-else>
+                      {{ get_name(author) }}
+                    </span>
+                    <template v-if="i < item.authors.length - 1">, </template>
+                  </span>
+                </div>
+
+                <div class="paper-source text-wrap">
+                  {{ item.source }} {{ item.year }}
+                </div>
+                <nav class="text-wrap">
+                  <a :href="item.paperurl">Paper</a>
+                  <a :href="item.codeurl">Code</a>
+                  <a v-if="item.projecturl !== null" :href="item.projecturl"
+                    >Project Page</a
+                  >
+                  <a :href="item.bibtex">BibTeX</a>
+                </nav>
+              </v-card-subtitle>
+              <v-card-text class="paper-detail">
+                {{ item.detail }}
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </template>
       </v-row>
     </v-card-text>
   </v-card>
@@ -171,6 +231,8 @@ const data: PublicationType[] = [
 
 .publication-title {
   font-size: medium;
+  word-break: keep-all;
+  padding-right: 0;
 }
 
 .my-info {
@@ -210,5 +272,6 @@ nav a:last-of-type {
 
 .paper-detail {
   padding-top: 0.5em;
+  padding-right: 0;
 }
 </style>
