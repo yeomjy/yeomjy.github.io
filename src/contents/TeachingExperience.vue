@@ -51,11 +51,11 @@ const data: TeachingExperience[] = [
   border-bottom: 2px #bfbfbf solid;
   line-height: 1.5 !important;
 }
-.ta-title {
+.news-title {
   font-size: medium;
 }
 
-.ta-list-container {
+.news-list-container {
   padding-left: 0;
 }
 </style>

@@ -3,6 +3,7 @@ import Skills from "@/contents/ProgrammingSkills.vue"
 import TA from "@/contents/TeachingExperience.vue"
 import Publications from "@/contents/PublicationSection.vue"
 import AboutMe from "@/contents/AboutMe.vue"
+import News from "@/contents/NewsSection.vue"
 </script>
 
 <template>
@@ -11,6 +12,11 @@ import AboutMe from "@/contents/AboutMe.vue"
       <v-row>
         <v-col>
           <AboutMe />
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <News />
         </v-col>
       </v-row>
       <v-row>
