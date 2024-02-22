@@ -12,6 +12,9 @@ import * as components from "vuetify/components"
 import * as directives from "vuetify/directives"
 import { aliases, fa } from "vuetify/iconsets/fa"
 
+// Google Analytics
+import VueGtag from "vue-gtag"
+
 const vuetify = createVuetify({
   components,
   directives,
@@ -26,5 +29,10 @@ const vuetify = createVuetify({
 const app = createApp(App)
 
 app.use(vuetify)
+app.use(VueGtag, {
+    config: {
+        id: "G-RZ50SN639",
+    }
+})
 
 app.mount("#app")
