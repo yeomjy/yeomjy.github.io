@@ -31,7 +31,7 @@ const app = createApp(App)
 app.use(vuetify)
 app.use(VueGtag, {
     config: {
-        id: "G-RZ50SN639",
+        id: "G-RZ50SN639D",
     }
 })
 
