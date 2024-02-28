@@ -5,7 +5,7 @@
       <h2 class="title font-weight-light mb-1">About Me</h2>
     </v-card-title>
     <v-card-text>
-      Hello! I'm a first-year Ph.D student
+      Hello! I'm a first-year Ph.D. student
       in Computer Science and Engineering
       at Seoul National University, advised by
       <a href="https://mllab.snu.ac.kr/hyunoh">Prof. Hyun Oh Song</a>.
