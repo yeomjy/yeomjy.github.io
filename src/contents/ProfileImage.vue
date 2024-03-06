@@ -3,7 +3,7 @@
   <v-avatar size="200" class="profile">
     <img
       alt="Profile Image"
-      src="../assets/profile.png"
+      src="../assets/profile.jpg"
       width="200"
       height="200"
     />
