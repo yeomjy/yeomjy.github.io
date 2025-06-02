@@ -8,6 +8,13 @@ type TeachingExperience = {
 }
 const data: TeachingExperience[] = [
   {
+    title: "Basics of Deep Learning",
+    id: "M2177.0043",
+    role: "Teaching Assistant",
+    year: 2025,
+    semester: "Spring",
+  },
+  {
     title: "Programming Languages",
     id: "4190.310",
     role: "Teaching Assistant",

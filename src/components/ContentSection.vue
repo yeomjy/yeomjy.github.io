@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Skills from "@/contents/ProgrammingSkills.vue"
 import TA from "@/contents/TeachingExperience.vue"
 import Publications from "@/contents/PublicationSection.vue"
 import AboutMe from "@/contents/AboutMe.vue"
@@ -27,11 +26,6 @@ import News from "@/contents/NewsSection.vue"
       <v-row>
         <v-col>
           <TA />
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col>
-          <Skills />
         </v-col>
       </v-row>
     </v-container>
