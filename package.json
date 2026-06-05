@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "vue": "^3.5.16",
-    "vue-gtag": "^2.0.1",
+    "vue-gtag": "^3",
     "vuetify": "^3.8.3"
   },
   "devDependencies": {

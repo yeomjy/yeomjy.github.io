@@ -11,7 +11,7 @@ import { createVuetify } from "vuetify"
 import { aliases, fa } from "vuetify/iconsets/fa"
 
 // Google Analytics
-import VueGtag from "vue-gtag"
+import { createGtag } from "vue-gtag"
 
 const vuetify = createVuetify({
   icons: {
@@ -25,10 +25,10 @@ const vuetify = createVuetify({
 const app = createApp(App)
 
 app.use(vuetify)
-app.use(VueGtag, {
-  config: {
-    id: "G-RZ50SN639D",
-  },
-})
+app.use(
+  createGtag({
+    tagId: "G-RZ50SN639D",
+  }),
+)
 
 app.mount("#app")
