@@ -28,6 +28,11 @@ app.use(vuetify)
 app.use(
   createGtag({
     tagId: "G-RZ50SN639D",
+    // vue-gtag 3 defaults send_page_view to false, and this app has no
+    // router, so without this the initial page view is never sent.
+    config: {
+      send_page_view: true,
+    },
   }),
 )
 
