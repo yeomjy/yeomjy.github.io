@@ -1,52 +1,34 @@
-# main-page
+# yeomjy.github.io
 
-This template should help get you started developing with Vue 3 in Vite.
+Source for my personal academic homepage, built with [Vue 3](https://vuejs.org)
+and [Vuetify 3](https://vuetifyjs.com) and bundled with [Vite](https://vite.dev).
+The site is deployed to GitHub Pages via the workflow in
+`.github/workflows/deploy.yml` on every push to `main`.
 
-## Recommended IDE Setup
+## Development
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+The package manager is [Yarn](https://yarnpkg.com).
 
 ```sh
-npm install
+yarn install      # install dependencies
+yarn dev          # start the dev server with HMR
+yarn build        # type-check + production build to dist/
+yarn preview      # preview the production build locally
+yarn lint         # ESLint (flat config) with --fix
+yarn format       # format src/ with Prettier
 ```
 
-### Compile and Hot-Reload for Development
+## Editing content
 
-```sh
-npm run dev
-```
+The page has no router; content lives in single-file components:
 
-### Type-Check, Compile and Minify for Production
+- `src/components/ProfileSection.vue` — left sidebar (photo, social links, education).
+- `src/components/ContentSection.vue` — right column (about, news, publications, teaching).
+- `src/contents/*.vue` — the individual content blocks. Edit these to update the
+  site's text, publications, news, etc.
 
-```sh
-npm run build
-```
+## Acknowledgements
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+The design is inspired by
+[evryn's vue-modern-resume](https://github.com/evryn/vue-modern-resume) and
+[Jon Barron's website](https://github.com/jonbarron/website).
