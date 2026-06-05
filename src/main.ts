@@ -3,15 +3,25 @@ import App from "./App.vue"
 
 import "./assets/main.css"
 
-import "@fortawesome/fontawesome-free/css/all.css"
-
 // Vuetify
 import "vuetify/styles"
 import { createVuetify } from "vuetify"
-import { aliases, fa } from "vuetify/iconsets/fa"
+import { aliases, fa } from "vuetify/iconsets/fa-svg"
+
+// FontAwesome (SVG icons, tree-shaken to only the icons we actually use)
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
+import {
+  faGithub,
+  faGoogleScholar,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons"
+import { faB, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 // Google Analytics
 import { createGtag } from "vue-gtag"
+
+library.add(faGithub, faGoogleScholar, faLinkedinIn, faB, faEnvelope)
 
 const vuetify = createVuetify({
   icons: {
@@ -24,6 +34,7 @@ const vuetify = createVuetify({
 })
 const app = createApp(App)
 
+app.component("font-awesome-icon", FontAwesomeIcon)
 app.use(vuetify)
 app.use(
   createGtag({

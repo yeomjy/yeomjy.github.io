@@ -11,13 +11,13 @@ const data: SocialInfoType[] = [
     name: "Email",
     url: "yeomjy@mllab.snu.ac.kr",
     protocol: "mailto:",
-    icon: "fa-solid fa-envelope",
+    icon: "fas fa-envelope",
   },
   {
     name: "Blog",
     url: "yeomjy.com/blog",
     protocol: "https://",
-    icon: "fa-solid fa-b",
+    icon: "fas fa-b",
   },
   {
     name: "LinkedIn",

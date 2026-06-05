@@ -21,17 +21,17 @@ import Social from "@/contents/SocialInfo.vue"
               href="https://github.com/yeomjy"
               target="_blank"
             >
-              <v-icon icon="fa-brands fa-github" />
+              <v-icon icon="fab fa-github" />
             </v-btn>
             <v-btn icon class="link-btn" href="mailto:yeomjy@mllab.snu.ac.kr">
-              <v-icon icon="fa-solid fa-envelope" />
+              <v-icon icon="fas fa-envelope" />
             </v-btn>
             <v-btn
               icon
               href="https://scholar.google.com/citations?user=L0TXeqoAAAAJ"
               target="_blank"
             >
-              <v-icon icon="fa-brands fa-google-scholar" />
+              <v-icon icon="fab fa-google-scholar" />
             </v-btn>
           </nav>
         </v-col>
